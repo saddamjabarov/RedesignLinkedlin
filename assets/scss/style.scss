@@ -1,5 +1,6 @@
 @import 'fonts';
-@import 'variables';
+@import 'rootColors';
 body {
   font-family: 'Roboto', sans-serif;
+  background: $primary-icon;
 }
