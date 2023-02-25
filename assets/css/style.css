@@ -19,3 +19,13 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+:root {
+  --main-bg: #ffffff;
+  --main-text: rgba(7, 9, 40, 0.75);
+  --secondary-link: #27ae60;
+  --secondary-text: #070928;
+  --primary-icon: #3456ff;
+  --input-bg: #f8f8fa;
+  --input-placeholder: rgba(7, 9, 40, 0.75);
+}
