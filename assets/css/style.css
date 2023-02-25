@@ -24,4 +24,5 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background: var(--primary-icon);
 }
