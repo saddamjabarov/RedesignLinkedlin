@@ -17,5 +17,11 @@
   font-style: normal;
 }
 body {
+<<<<<<< HEAD
   font-family: 'Roboto', sans-serif;
 }
+=======
+  font-family: "Roboto", sans-serif;
+  background: var(--primary-icon);
+}
+>>>>>>> parent of 9449ca8 (delete background body color)
