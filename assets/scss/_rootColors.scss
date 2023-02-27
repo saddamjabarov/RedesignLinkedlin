@@ -1,11 +1,3 @@
-// $main-bg: var(--main-bg);
-// $main-text: var(--main-text);
-// $secondary-link: var(--secondary-link);
-// $secondary-text: var(--secondary-text);
-// $primary-icon: var(--primary-icon);
-// $input-bg: var(--input-bg);
-// $input-placeholder: var(--input-placeholder);
-
 :root {
   --main-bg: #ffffff;
   --main-text: rgba(7, 9, 40, 0.75);
@@ -15,3 +7,10 @@
   --input-bg: #f8f8fa;
   --input-placeholder: rgba(7, 9, 40, 0.75);
 }
+$main-bg: var(--main-bg);
+$main-text: var(--main-text);
+$secondary-link: var(--secondary-link);
+$secondary-text: var(--secondary-text);
+$primary-icon: var(--primary-icon);
+$input-bg: var(--input-bg);
+$input-placeholder: var(--input-placeholder);
