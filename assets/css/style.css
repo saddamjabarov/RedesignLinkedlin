@@ -1,21 +1,22 @@
+.container {
+  max-width: 1110px;
+}
+
 @font-face {
-  font-family: 'Roboto';
-  src: url('./../fonts/Roboto-Regular.eot');
-  src: url('./../fonts/Roboto-Regular.ttf') format('embedded-opentype'),
-    url('./../fonts/Roboto-Regular.woff') format('woff'),
-    url('./../fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("./../fonts/Roboto-Regular.eot");
+  src: url("./../fonts/Roboto-Regular.ttf") format("embedded-opentype"), url("./../fonts/Roboto-Regular.woff") format("woff"), url("./../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url('./../fonts/Roboto-Light.eot');
-  src: url('./../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
-    url('./../fonts/Roboto-Light.woff') format('woff'),
-    url('./../fonts/Roboto-Light.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("./../fonts/Roboto-Light.eot");
+  src: url("./../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("./../fonts/Roboto-Light.woff") format("woff"), url("./../fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
+<<<<<<< HEAD
 body {
 <<<<<<< HEAD
   font-family: 'Roboto', sans-serif;
@@ -25,3 +26,18 @@ body {
   background: var(--primary-icon);
 }
 >>>>>>> parent of 9449ca8 (delete background body color)
+=======
+:root {
+  --main-bg: #ffffff;
+  --main-text: rgba(7, 9, 40, 0.75);
+  --secondary-link: #27ae60;
+  --secondary-text: #070928;
+  --primary-icon: #3456ff;
+  --input-bg: #f8f8fa;
+  --input-placeholder: rgba(7, 9, 40, 0.75);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+>>>>>>> feature/230323-02/design-system

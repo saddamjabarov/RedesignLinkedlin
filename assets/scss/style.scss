@@ -1,6 +1,9 @@
+.container {
+  max-width: 1110px;
+}
+
 @import 'fonts';
 @import 'rootColors';
 body {
   font-family: 'Roboto', sans-serif;
-  background: $primary-icon;
 }
