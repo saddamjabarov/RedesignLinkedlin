@@ -1,0 +1,52 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 259px 1fr 254px;
+  grid-template-rows: 50px 251px 371px 562px;
+  grid-gap: 20px;
+  grid-template-areas:
+    'header header header'
+    'slide-profile slider recomendations'
+    'slide-profile new-post recomendations'
+    'menu-sidebar posts advertisment';
+}
+.header {
+  grid-area: header;
+  background-color: burlywood;
+}
+.slide-profile {
+  grid-area: slide-profile;
+  background-color: burlywood;
+}
+.slider {
+  grid-area: slider;
+  background-color: burlywood;
+}
+.recomendations {
+  grid-area: recomendations;
+  background-color: burlywood;
+}
+.slide-profile {
+  grid-area: slide-profile;
+  background-color: burlywood;
+}
+.new-post {
+  grid-area: new-post;
+  background-color: burlywood;
+}
+
+.recomendations {
+  background-color: burlywood;
+  grid-area: recomendations;
+}
+.menu-sidebar {
+  grid-area: menu-sidebar;
+  background-color: burlywood;
+}
+.posts {
+  grid-area: posts;
+  background-color: burlywood;
+}
+.advertisment {
+  background-color: burlywood;
+  grid-area: advertisment;
+}
