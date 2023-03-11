@@ -1,52 +1,60 @@
 .wrapper {
   display: grid;
   grid-template-columns: 259px 1fr 254px;
-  grid-template-rows: 50px 251px 371px 562px;
-  grid-gap: 20px;
+  grid-template-rows: 358px 562px 562px;
+  grid-gap: 15px;
   grid-template-areas:
-    'header header header'
     'slide-profile slider recomendations'
     'slide-profile new-post recomendations'
-    'menu-sidebar posts advertisment';
-}
-.header {
-  grid-area: header;
-  background-color: burlywood;
+    'menu-sidebar posts advertisment'
+    '. posts profile-company'
+    '. . chat';
 }
 .slide-profile {
   grid-area: slide-profile;
-  background-color: burlywood;
+  background: $img-primary;
 }
 .slider {
   grid-area: slider;
-  background-color: burlywood;
+  background: $img-primary;
 }
 .recomendations {
   grid-area: recomendations;
-  background-color: burlywood;
+  background: $img-primary;
 }
 .slide-profile {
   grid-area: slide-profile;
-  background-color: burlywood;
+  background: $img-primary;
 }
 .new-post {
   grid-area: new-post;
-  background-color: burlywood;
+  background: $img-primary;
 }
-
 .recomendations {
-  background-color: burlywood;
   grid-area: recomendations;
+  background: $img-primary;
 }
 .menu-sidebar {
   grid-area: menu-sidebar;
-  background-color: burlywood;
+  background: $img-primary;
 }
 .posts {
   grid-area: posts;
-  background-color: burlywood;
+  background: $img-primary;
+}
+.posts {
+  grid-area: posts;
+  background: $img-primary;
 }
 .advertisment {
-  background-color: burlywood;
   grid-area: advertisment;
+  background: $img-primary;
+}
+.profile-company {
+  grid-area: profile-company;
+  background: $img-primary;
+}
+.chat {
+  grid-area: chat;
+  background: $img-primary;
 }
