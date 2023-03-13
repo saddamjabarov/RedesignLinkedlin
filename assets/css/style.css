@@ -340,12 +340,11 @@ template {
 .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 259px 20px 1fr 20px 254px;
+  -ms-grid-columns: 259px 15px 1fr 15px 254px;
   grid-template-columns: 259px 1fr 254px;
-  -ms-grid-rows: 50px 20px 251px 20px 371px 20px 562px;
-  grid-template-rows: 50px 251px 371px 562px;
-  grid-gap: 20px;
-      grid-template-areas: "header header header" "slide-profile slider recomendations" "slide-profile new-post recomendations" "menu-sidebar posts advertisment";
+  grid-gap: 15px;
+  -ms-grid-rows: auto 15px auto 15px auto 15px auto 15px auto 15px auto;
+      grid-template-areas: "header header header" "slide-profile slider recomendations" "slide-profile new-post recomendations" "slide-profile posts recomendations" "menu-sidebar posts profile-company" ". advertisment chat";
 }
 
 .header {
@@ -353,74 +352,123 @@ template {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: header;
-  background-color: burlywood;
+  background: var(--primary-icon);
+  height: 89px;
 }
 
 .slide-profile {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 5;
   -ms-grid-column: 1;
   grid-area: slide-profile;
-  background-color: burlywood;
+  background: var(--primary-icon);
+  height: 358px;
 }
 
 .slider {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: slider;
-  background-color: burlywood;
+  background: var(--primary-icon);
+  height: 100px;
 }
 
 .recomendations {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 5;
   -ms-grid-column: 5;
   grid-area: recomendations;
-  background-color: burlywood;
+  background: var(--primary-icon);
+  height: 358px;
 }
 
 .slide-profile {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 5;
   -ms-grid-column: 1;
   grid-area: slide-profile;
-  background-color: burlywood;
+  background: var(--primary-icon);
 }
 
 .new-post {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
   grid-area: new-post;
-  background-color: burlywood;
+  background: var(--primary-icon);
+  height: 151px;
 }
 
 .recomendations {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 5;
   -ms-grid-column: 5;
-  background-color: burlywood;
   grid-area: recomendations;
+  background: var(--primary-icon);
 }
 
-.menu-sidebar {
-  -ms-grid-row: 7;
+.slide-profile {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
   -ms-grid-column: 1;
-  grid-area: menu-sidebar;
-  background-color: burlywood;
+  grid-area: slide-profile;
+  background: var(--primary-icon);
 }
 
 .posts {
   -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 3;
   grid-area: posts;
-  background-color: burlywood;
+  background: var(--primary-icon);
+  height: 562px;
+}
+
+.recomendations {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 5;
+  background: var(--primary-icon);
+  grid-area: recomendations;
+}
+
+.menu-sidebar {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: menu-sidebar;
+  background: var(--primary-icon);
+  height: 376px;
+}
+
+.posts {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: posts;
+  background: var(--primary-icon);
+}
+
+.profile-company {
+  -ms-grid-row: 9;
+  -ms-grid-column: 5;
+  grid-area: profile-company;
+  background: var(--primary-icon);
+  height: 294px;
 }
 
 .advertisment {
-  -ms-grid-row: 7;
-  -ms-grid-column: 5;
-  background-color: burlywood;
+  -ms-grid-row: 11;
+  -ms-grid-column: 3;
   grid-area: advertisment;
+  background: var(--primary-icon);
+  height: 562px;
+}
+
+.chat {
+  -ms-grid-row: 11;
+  -ms-grid-column: 5;
+  grid-area: chat;
+  background: var(--primary-icon);
+  height: 46px;
 }
 
 .card {
