@@ -1,84 +1,69 @@
-.wrapper {
+.main {
+  margin-top: 30px;
+  @include container;
   display: grid;
   grid-template-columns: 259px 1fr 254px;
-  grid-gap: 15px;
-  grid-template-areas:
-    'header header header'
-    'slide-profile slider recomendations'
-    'slide-profile new-post recomendations'
-    'slide-profile posts recomendations'
-    'menu-sidebar posts profile-company'
-    '. advertisment chat';
+  grid-gap: 30px;
+  grid-template-areas: 'left center right';
 }
 .header {
-  grid-area: header;
   background: $primary-icon;
   height: 89px;
+  text-align: center;
 }
 .slide-profile {
-  grid-area: slide-profile;
   background: $primary-icon;
+  margin-top: 30px;
   height: 358px;
+  text-align: center;
 }
 .slider {
-  grid-area: slider;
-  background: $primary-icon;
   height: 100px;
-}
-
-.recomendations {
-  grid-area: recomendations;
   background: $primary-icon;
-  height: 358px;
+  text-align: center;
+  margin-top: 30px;
 }
-.slide-profile {
-  grid-area: slide-profile;
+.recommendations {
+  grid-area: recommendations;
+  height: 371px;
   background: $primary-icon;
+  text-align: center;
+  margin-top: 30px;
 }
 .new-post {
   grid-area: new-post;
-  background: $primary-icon;
   height: 151px;
-}
-
-.recomendations {
-  grid-area: recomendations;
   background: $primary-icon;
-}
-.slide-profile {
-  grid-area: slide-profile;
-  background: $primary-icon;
+  text-align: center;
+  margin-top: 30px;
 }
 .posts {
-  grid-area: posts;
+  height: 568px;
   background: $primary-icon;
-  height: 562px;
-}
-.recomendations {
-  background: $primary-icon;
-  grid-area: recomendations;
+  text-align: center;
+  margin-top: 30px;
 }
 .menu-sidebar {
-  grid-area: menu-sidebar;
-  background: $primary-icon;
   height: 376px;
-}
-.posts {
-  grid-area: posts;
+  text-align: center;
   background: $primary-icon;
+  margin-top: 30px;
+}
+.advertisement {
+  height: 294px;
+  background: $primary-icon;
+  text-align: center;
+  margin-top: 30px;
 }
 .profile-company {
-  grid-area: profile-company;
+  height: 190px;
   background: $primary-icon;
-  height: 294px;
-}
-.advertisment {
-  grid-area: advertisment;
-  background: $primary-icon;
-  height: 562px;
+  text-align: center;
+  margin-top: 30px;
 }
 .chat {
-  grid-area: chat;
-  background: $primary-icon;
   height: 46px;
+  background: $primary-icon;
+  text-align: center;
+  margin-top: 30px;
 }
