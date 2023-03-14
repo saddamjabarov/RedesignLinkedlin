@@ -4,6 +4,7 @@
   --secondary-link: #27ae60;
   --secondary-text: #070928;
   --primary-icon: #3456ff;
+  --primary-icons: rgba(52, 86, 255, 0.75);
   --input-bg: #f8f8fa;
   --input-placeholder: rgba(7, 9, 40, 0.75);
 }
@@ -14,3 +15,4 @@ $secondary-text: var(--secondary-text);
 $primary-icon: var(--primary-icon);
 $input-bg: var(--input-bg);
 $input-placeholder: var(--input-placeholder);
+$primary-icons: var(--primary-icons);

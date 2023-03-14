@@ -333,6 +333,7 @@ template {
   --secondary-link: #27ae60;
   --secondary-text: #070928;
   --primary-icon: #3456ff;
+  --primary-icons: rgba(52, 86, 255, 0.75);
   --input-bg: #f8f8fa;
   --input-placeholder: rgba(7, 9, 40, 0.75);
 }
@@ -350,9 +351,7 @@ template {
 }
 
 .header {
-  background: var(--primary-icon);
   height: 89px;
-  text-align: center;
 }
 
 .slide-profile {
@@ -422,6 +421,112 @@ template {
 
 .card {
   border-radius: 32px;
+}
+
+.fz12 {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.fz14 {
+  font-size: 14px;
+  color: var(--input-placeholder);
+}
+
+.header__wrapper {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 18px 0 21px 0;
+  height: 51px;
+}
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__search {
+  position: relative;
+  width: 567px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__search_search {
+  position: absolute;
+  left: 98px;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+}
+.header__linkedlin {
+  padding-top: 5px;
+  width: 47.26px;
+  height: 45px;
+}
+.header__input {
+  margin-left: 32px;
+  width: 488px;
+  height: 50px;
+  padding-left: 52px;
+  background: #f8f8fa;
+  border-radius: 25px;
+  font-weight: 400;
+  border: none;
+}
+.header__icons {
+  width: 355px;
+  margin-left: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__icon {
+  width: 45px;
+  height: 45px;
+  background: var(--primary-icons);
+  border-radius: 15px;
+}
+.header .icon {
+  background: var(--primary-icon);
+}
+.header__link {
+  display: block;
+  padding: 11px;
+}
+.header__img {
+  width: 164.14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__text {
+  font-weight: 500;
+  padding-top: 15px;
+}
+.header img {
+  width: 45px;
+  height: 45px;
+  background: #dbe7ff;
+  border-radius: 20px;
+}
+.header__gloup {
+  margin-top: 12px;
+}
+.header span {
+  height: 45px;
+  border-right: 2px solid rgba(0, 0, 0, 0.25);
 }
 
 body {
