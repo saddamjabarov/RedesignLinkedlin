@@ -1,81 +1,92 @@
 .header {
-  &__wrapper {
-    @include container;
+  &__container {
     padding: 18px 0 21px 0;
-    height: 51px;
+    height: 89px;
+    @include container;
   }
   &__block {
     display: flex;
     justify-content: space-between;
   }
-  &__search {
+  &__search-form {
     position: relative;
     width: 567px;
     display: flex;
     justify-content: space-between;
-    &_search {
-      position: absolute;
-      left: 98px;
-      top: 16px;
-      width: 24px;
-      height: 24px;
-    }
   }
-  &__linkedlin {
-    padding-top: 5px;
+  &__logo {
     width: 47.26px;
     height: 45px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  &__search {
+    position: absolute;
+    left: 97px;
+    top: 15px;
+    width: 24px;
+    height: 24px;
   }
   &__input {
-    margin-left: 32px;
     width: 488px;
     height: 50px;
-    padding-left: 52px;
-    background: #f8f8fa;
+    background: $input-bg;
     border-radius: 25px;
-    font-weight: 400;
     border: none;
+    margin-left: 30px;
   }
-  &__icons {
+  &__menu {
+    position: relative;
+    list-style-type: none;
     width: 355px;
-    margin-left: 3px;
+    margin-top: 1px;
+    padding-left: 12px;
+  }
+  &__item {
     display: flex;
     justify-content: space-between;
+    margin-right: 24px;
   }
-  &__icon {
+  &__list {
     width: 45px;
     height: 45px;
     background: $primary-icons;
     border-radius: 15px;
   }
-  .icon {
-    background: $primary-icon;
-  }
   &__link {
     display: block;
-    padding: 11px;
+    text-align: center;
+    padding-top: 9px;
   }
-  &__img {
-    width: 164.14px;
+  &__delimiter {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 0px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    transform: rotate(90deg);
+    left: 336px;
+    top: 22px;
+  }
+  &__user-data {
     display: flex;
     justify-content: space-between;
-  }
-  &__text {
-    font-weight: 500;
-    padding-top: 15px;
-  }
-  img {
-    width: 45px;
+    width: 164.14px;
     height: 45px;
-    background: #dbe7ff;
-    border-radius: 20px;
+    margin-top: 5px;
   }
-
-  &__gloup {
+  &__img-user {
+    img {
+      background: #dbe7ff;
+      border-radius: 18px;
+    }
+  }
+  &__user-name {
     margin-top: 12px;
+    font-weight: 500;
   }
-  span {
-    height: 45px;
-    border-right: 2px solid rgba(0, 0, 0, 0.25);
+  &__btn {
+    margin-top: 9px;
+    cursor: pointer;
   }
 }
