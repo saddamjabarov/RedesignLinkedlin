@@ -1,31 +1,30 @@
 .header {
   &__container {
-    padding: 18px 0 21px 0;
+    padding: 10px 0 21px 0;
     height: 89px;
     @include container;
   }
   &__block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
-  &__search-form {
+  &__search-point {
     position: relative;
     width: 567px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__logo {
-    width: 47.26px;
-    height: 45px;
-    margin-top: 5px;
+    display: block;
     cursor: pointer;
   }
   &__search {
+    display: block;
     position: absolute;
     left: 97px;
     top: 15px;
-    width: 24px;
-    height: 24px;
   }
   &__input {
     width: 488px;
@@ -34,18 +33,20 @@
     border-radius: 25px;
     border: none;
     margin-left: 30px;
+    padding-left: 57px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $main-text;
   }
   &__menu {
     position: relative;
     list-style-type: none;
     width: 355px;
-    margin-top: 1px;
-    padding-left: 12px;
-  }
-  &__item {
+    padding-left: 17px;
+    margin-right: 24px;
     display: flex;
     justify-content: space-between;
-    margin-right: 24px;
   }
   &__list {
     width: 45px;
@@ -62,31 +63,32 @@
     position: absolute;
     display: block;
     width: 45px;
-    height: 0px;
     border: 2px solid rgba(0, 0, 0, 0.25);
     transform: rotate(90deg);
-    left: 336px;
+    left: 349px;
     top: 22px;
   }
-  &__user-data {
+  .user-data {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 164.14px;
-    height: 45px;
-    margin-top: 5px;
-  }
-  &__img-user {
-    img {
+    &__img {
       background: #dbe7ff;
       border-radius: 18px;
     }
-  }
-  &__user-name {
-    margin-top: 12px;
-    font-weight: 500;
-  }
-  &__btn {
-    margin-top: 9px;
-    cursor: pointer;
+    &__name {
+      font-weight: 500;
+    }
+    &__button {
+      display: flex;
+      align-items: center;
+      background-color: $main-bg;
+      width: 14px;
+      height: 14px;
+      border: none;
+      cursor: pointer;
+    }
   }
 }
